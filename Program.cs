@@ -36,15 +36,38 @@
 
 
 
-Console.WriteLine("введите число ");
+// Console.WriteLine("введите число ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if (num%2==0)
+// {
+//     Console.WriteLine("Число " + num + "Является: Нечетным");
+// }
+
+// else
+// {
+//     Console.WriteLine("число " + num + "является: Четным");
+// }
+
+
+int i = 1;
+bool not = true;
+
+Console.WriteLine("введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if (num%2==0)
+Console.WriteLine("четные числа от 1 до " + num);
+while (i <- num)
 {
-    Console.WriteLine("Число " + num + "Является: Нечетным");
+    if (i% 2 !=1)   
+    {
+        Console.Write(i + ", ");
+        not = false;
+    }
+    i++;
 }
 
-else
+if (not)
 {
-    Console.WriteLine("число " + num + "является: Четным");
+    Console.WriteLine("нет четных чисел");
 }
