@@ -14,20 +14,37 @@
 // }
 
 
-Console.WriteLine("введите три числа: ");
-int num_1 = Convert.ToInt32(Console.ReadLine());
-int num_2 = Convert.ToInt32(Console.ReadLine());
-int num_3 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("введите три числа: ");
+// int num_1 = Convert.ToInt32(Console.ReadLine());
+// int num_2 = Convert.ToInt32(Console.ReadLine());
+// int num_3 = Convert.ToInt32(Console.ReadLine());
 
-int max = num_1;
-if (num_2 > max)
+// int max = num_1;
+// if (num_2 > max)
+// {
+//     max = num_2;
+// }
+
+// if (num_3 > max)
+// {
+//     max = num_3;
+// }
+
+// Console.WriteLine("наибольшее из введеных чисел -> " + max);
+
+
+
+
+
+Console.WriteLine("введите число ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+if (num%2==0)
 {
-    max = num_2;
+    Console.WriteLine("Число " + num + "Является: Нечетным");
 }
 
-if (num_3 > max)
+else
 {
-    max = num_3;
+    Console.WriteLine("число " + num + "является: Четным");
 }
-
-Console.WriteLine("наибольшее из введеных чисел -> " + max);
